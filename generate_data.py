@@ -15,18 +15,49 @@ def extraire_image(article, nom_site):
 
     images_secours = {
         'CERT-FR': (
-            'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400'
+            'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=500'
+        ),
+        'CVE Feed': (
+            'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500'
+        ),
+        'Bleeping': (
+            'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500'
         ),
         'Sécurité Debian': (
-            'https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=400'
+            'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500'
         ),
         'IT-Connect': (
-            'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400'
+            'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500'
+        ),
+        'Blog Officiel Zabbix': (
+            'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500'
+        ),
+        'LeMagIT': (
+            'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500'
+        ),
+        'Journal du Hacker': (
+            'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500'
+        ),
+        'Korben': (
+            'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=500'
+        ),
+        'ZDNET': (
+            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500'
+        ),
+        "L'informaticien": (
+            'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500'
+        ),
+        'ChannelNews': (
+            'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500'
+        ),
+        'next.ink': (
+            'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500'
         ),
     }
+
     return images_secours.get(
         nom_site,
-        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500',
     )
 
 
