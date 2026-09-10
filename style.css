@@ -52,7 +52,6 @@ header h1 {
     border-color: #38bdf8;
 }
 
-/* Grille réactive d'articles */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
