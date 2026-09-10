@@ -1,14 +1,14 @@
 :root {
-    --bg-dark: #0b0f19;
-    --bg-card: #151c2c;
-    --bg-card-hover: #1e293b;
-    --border-color: #243048;
-    --border-accent: #38bdf8;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --primary: #0284c7;
-    --primary-glow: rgba(56, 189, 248, 0.15);
-    --accent-green: #10b981;
+    --bg-dark: #0d1117;
+    --bg-card: #161b22;
+    --bg-card-hover: #21262d;
+    --border-color: #30363d;
+    --border-accent: #58a6ff;
+    --text-main: #f0f6fc;
+    --text-muted: #8b949e;
+    --primary: #1f6beb;
+    --primary-glow: rgba(56, 139, 253, 0.15);
+    --accent-green: #238636;
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
