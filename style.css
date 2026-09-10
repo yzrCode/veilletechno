@@ -1,17 +1,16 @@
 :root {
-    --bg-dark: #0d1117;
-    --bg-card: #161b22;
-    --bg-card-hover: #21262d;
-    --border-color: #30363d;
-    --border-accent: #58a6ff;
-    --text-main: #f0f6fc;
-    --text-muted: #8b949e;
-    --primary: #1f6beb;
-    --primary-glow: rgba(56, 139, 253, 0.15);
-    --accent-green: #238636;
+    --bg-dark: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --border-color: #e2e8f0;
+    --border-accent: #2563eb;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --primary: #2563eb;
+    --primary-glow: rgba(37, 99, 235, 0.1);
+    --accent-green: #16a34a;
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
