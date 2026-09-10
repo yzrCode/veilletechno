@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veille Informatique & Tech</title>
+    <title>Portail de Veille Informatique & Cybersécurité</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>⚡ Veille Informatique & Tech</h1>
-            <p class="meta-info">Dernière mise à jour : <span id="last-update">Chargement...</span> | Total : <span id="total-count">0</span> articles</p>
+            <h1>🔒 Veille Tech & Cybersécurité</h1>
+            <p class="subtitle">Agrégateur d'actualités IT en temps réel</p>
         </header>
 
-        <div class="controls">
-            <input type="text" id="search-input" placeholder="🔍 Filtrer par mot-clé, sujet ou source...">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="🔍 Rechercher un sujet, un CVE, une technologie...">
         </div>
 
-        <main id="articles-container" class="articles-grid">
-            <p class="no-results">Chargement des actualités...</p>
+        <main id="articles-grid" class="grid">
+            <p class="loading">Chargement des actualités...</p>
         </main>
     </div>
 
@@ -27,41 +27,50 @@
 
         async function chargerVeille() {
             try {
-                // Lecture du fichier JSON généré par Python
-                const reponse = await fetch('data.json?v=' + new Date().getTime());
-                const data = await reponse.json();
+                // Lecture du fichier JSON généré par ton script Python
+                const reponse = await fetch('veille.json?v=' + new Date().getTime());
+                const donneesParSite = await reponse.json();
 
-                document.getElementById('last-update').textContent = data.derniere_mise_a_jour;
-                document.getElementById('total-count').textContent = data.nb_articles;
+                // On transforme le dictionnaire { "Site": [articles] } en un tableau d'articles
+                tousLesArticles = [];
+                for (const [nomSite, articles] of Object.entries(donneesParSite)) {
+                    articles.forEach(article => {
+                        tousLesArticles.push({
+                            ...article,
+                            source: nomSite
+                        });
+                    });
+                }
 
-                tousLesArticles = data.articles;
                 afficherArticles(tousLesArticles);
             } catch (erreur) {
-                console.error("Erreur lors de la lecture de data.json:", erreur);
-                document.getElementById('articles-container').innerHTML = 
-                    '<p class="no-results">❌ Impossible de charger data.json. Lancez d\'abord generate_data.py.</p>';
+                console.error("Erreur de chargement du JSON :", erreur);
+                document.getElementById('articles-grid').innerHTML = 
+                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord Veille_tech_json.py.</p>';
             }
         }
 
-        function afficherArticles(articles) {
-            const container = document.getElementById('articles-container');
+        function afficherArticles(liste) {
+            const container = document.getElementById('articles-grid');
             
-            if (articles.length === 0) {
-                container.innerHTML = '<p class="no-results">Aucun article ne correspond à votre recherche.</p>';
+            if (liste.length === 0) {
+                container.innerHTML = '<p class="error">Aucun article ne correspond à la recherche.</p>';
                 return;
             }
 
-            container.innerHTML = articles.map(article => `
-                <article class="article-card">
-                    <div class="card-header">
-                        <span class="source-badge">${echapperHtml(article.source)}</span>
-                        <span class="article-date">🕒 ${echapperHtml(article.date)}</span>
+            container.innerHTML = liste.map(item => `
+                <article class="card">
+                    <div class="card-image" style="background-image: url('${echapperHtml(item.image)}')">
+                        <span class="badge">${echapperHtml(item.source)}</span>
                     </div>
-                    <h2 class="article-title">
-                        <a href="${echapperHtml(article.lien)}" target="_blank" rel="noopener noreferrer">
-                            ${echapperHtml(article.titre)}
-                        </a>
-                    </h2>
+                    <div class="card-body">
+                        <span class="date">📅 ${echapperHtml(item.date)}</span>
+                        <h2 class="title">
+                            <a href="${echapperHtml(item.lien)}" target="_blank" rel="noopener noreferrer">
+                                ${echapperHtml(item.titre)}
+                            </a>
+                        </h2>
+                    </div>
                 </article>
             `).join('');
         }
@@ -72,14 +81,14 @@
             return div.innerHTML;
         }
 
-        // Filtre instantané sur le champ de recherche
+        // Filtre dynamique avec la barre de recherche
         document.getElementById('search-input').addEventListener('input', (e) => {
-            const recherche = e.target.value.toLowerCase().trim();
-            const articlesFiltres = tousLesArticles.filter(art => 
-                art.titre.toLowerCase().includes(recherche) || 
-                art.source.toLowerCase().includes(recherche)
+            const filtre = e.target.value.toLowerCase().trim();
+            const resultats = tousLesArticles.filter(art => 
+                art.titre.toLowerCase().includes(filtre) || 
+                art.source.toLowerCase().includes(filtre)
             );
-            afficherArticles(articlesFiltres);
+            afficherArticles(resultats);
         });
 
         chargerVeille();
