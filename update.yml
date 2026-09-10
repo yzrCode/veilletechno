@@ -1,0 +1,23 @@
+name: Mise à jour automatique des flux RSS
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # S'exécute automatiquement toutes les 6 heures
+  workflow_dispatch: # Permet de lancer le script à la main depuis GitHub
+
+jobs:
+  update-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install feedparser
+      - run: python generate_data.py
+      - run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data.json
+          git diff-index --quiet HEAD || git commit -m "auto: mise à jour des flux RSS"
+          git push

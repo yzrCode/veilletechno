@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Informatique & Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ Veille Informatique & Tech</h1>
+            <p class="meta-info">Dernière mise à jour : <span id="last-update">Chargement...</span> | Total : <span id="total-count">0</span> articles</p>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="🔍 Filtrer par mot-clé, sujet ou source...">
+        </div>
+
+        <main id="articles-container" class="articles-grid">
+            <p class="no-results">Chargement des actualités...</p>
+        </main>
+    </div>
+
+    <script>
+        let tousLesArticles = [];
+
+        async function chargerVeille() {
+            try {
+                // Lecture du fichier JSON généré par Python
+                const reponse = await fetch('data.json?v=' + new Date().getTime());
+                const data = await reponse.json();
+
+                document.getElementById('last-update').textContent = data.derniere_mise_a_jour;
+                document.getElementById('total-count').textContent = data.nb_articles;
+
+                tousLesArticles = data.articles;
+                afficherArticles(tousLesArticles);
+            } catch (erreur) {
+                console.error("Erreur lors de la lecture de data.json:", erreur);
+                document.getElementById('articles-container').innerHTML = 
+                    '<p class="no-results">❌ Impossible de charger data.json. Lancez d\'abord generate_data.py.</p>';
+            }
+        }
+
+        function afficherArticles(articles) {
+            const container = document.getElementById('articles-container');
+            
+            if (articles.length === 0) {
+                container.innerHTML = '<p class="no-results">Aucun article ne correspond à votre recherche.</p>';
+                return;
+            }
+
+            container.innerHTML = articles.map(article => `
+                <article class="article-card">
+                    <div class="card-header">
+                        <span class="source-badge">${echapperHtml(article.source)}</span>
+                        <span class="article-date">🕒 ${echapperHtml(article.date)}</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="${echapperHtml(article.lien)}" target="_blank" rel="noopener noreferrer">
+                            ${echapperHtml(article.titre)}
+                        </a>
+                    </h2>
+                </article>
+            `).join('');
+        }
+
+        function echapperHtml(texte) {
+            const div = document.createElement('div');
+            div.textContent = texte;
+            return div.innerHTML;
+        }
+
+        // Filtre instantané sur le champ de recherche
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const recherche = e.target.value.toLowerCase().trim();
+            const articlesFiltres = tousLesArticles.filter(art => 
+                art.titre.toLowerCase().includes(recherche) || 
+                art.source.toLowerCase().includes(recherche)
+            );
+            afficherArticles(articlesFiltres);
+        });
+
+        chargerVeille();
+    </script>
+</body>
+</html>
