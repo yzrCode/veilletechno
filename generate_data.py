@@ -1,97 +1,75 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portail de Veille Informatique & Cybersécurité</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🔒 Veille Tech & Cybersécurité</h1>
-            <p class="subtitle">Agrégateur d'actualités IT en temps réel</p>
-        </header>
+import feedparser
+from datetime import datetime
+import json
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="🔍 Rechercher un sujet, un CVE, une technologie...">
-        </div>
+def extraire_image(article, nom_site):
+    """Tente de trouver une image dans l'article, sinon renvoie une image par défaut."""
+    # Récupération des balises média via feedparser (flux RSS)
+    if 'media_content' in article and len(article.media_content) > 0:
+        return article.media_content[0].get('url')
+        
+    # Fichiers joints (enclosures)
+    if 'enclosures' in article and len(article.enclosures) > 0:
+        for enc in article.enclosures:
+            if enc.get('type', '').startswith('image/'):
+                return enc.get('url')
+                
+    # Images de secours selon la source
+    images_secours = {
+        "CERT-FR": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400", 
+        "Sécurité Debian": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=400", 
+        "IT-Connect": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400",
+    }
+    return images_secours.get(nom_site, "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400")
 
-        <main id="articles-grid" class="grid">
-            <p class="loading">Chargement des actualités...</p>
-        </main>
-    </div>
+def generer_json_veille():
+    sources_rss = {
+        "IT-Connect": "https://www.it-connect.fr/feed/",
+        "Journal du Hacker": "https://www.journalduhacker.net/rss",
+        "Korben": "https://korben.info/feed/",
+        "CERT-FR": "https://www.cert.ssi.gouv.fr/alerte/feed/",
+        "ZDNET": "https://www.zdnet.fr/feeds/rss/actualites/",
+        "Sécurité Debian": "https://www.debian.org/security/dsa-long.fr.rdf", 
+        "Blog Officiel Zabbix": "https://blog.zabbix.com/feed/",
+        "CVE Feed": "https://cvefeed.io/rssfeed/severity/high.xml",
+        "Bleeping": "https://www.bleepingcomputer.com/feed/",
+        "LeMagIT": "https://www.lemagit.fr/rss/ContentSyndication.xml",
+        "L'informaticien": "https://www.linformaticien.com/?format=feed&type=rss",
+        "ChannelNews": "https://www.channelnews.fr/feed/",
+        "next.ink": "https://next.ink/feed/"
+    }
+    
+    donnees_site_web = {}
 
-    <script>
-        let tousLesArticles = [];
+    for nom_site, url_flux in sources_rss.items():
+        try:
+            flux = feedparser.parse(url_flux)
+            if not flux.entries:
+                continue
 
-        async function chargerVeille() {
-            try {
-                // Lecture du fichier JSON généré par ton script Python
-                const reponse = await fetch('veille.json?v=' + new Date().getTime());
-                const donneesParSite = await reponse.json();
-
-                // On transforme le dictionnaire { "Site": [articles] } en un tableau d'articles
-                tousLesArticles = [];
-                for (const [nomSite, articles] of Object.entries(donneesParSite)) {
-                    articles.forEach(article => {
-                        tousLesArticles.push({
-                            ...article,
-                            source: nomSite
-                        });
-                    });
-                }
-
-                afficherArticles(tousLesArticles);
-            } catch (erreur) {
-                console.error("Erreur de chargement du JSON :", erreur);
-                document.getElementById('articles-grid').innerHTML = 
-                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord Veille_tech_json.py.</p>';
-            }
-        }
-
-        function afficherArticles(liste) {
-            const container = document.getElementById('articles-grid');
+            donnees_site_web[nom_site] = []
             
-            if (liste.length === 0) {
-                container.innerHTML = '<p class="error">Aucun article ne correspond à la recherche.</p>';
-                return;
-            }
+            # Récupère les 10 derniers articles et formate la date (JJ/MM/AAAA)
+            for article in flux.entries[:10]:
+                date_brute = article.get('published_parsed') or article.get('updated_parsed')
+                date_pub = datetime(*date_brute[:6]).strftime("%d/%m/%Y") if date_brute else "Date inconnue"
+                
+                image_url = extraire_image(article, nom_site)
+                
+                donnees_site_web[nom_site].append({
+                    "titre": article.title,
+                    "lien": article.link,
+                    "date": date_pub,
+                    "image": image_url
+                })
+        except Exception as e:
+            print(f"[!] Erreur lors de la récupération de {nom_site}: {e}")
 
-            container.innerHTML = liste.map(item => `
-                <article class="card">
-                    <div class="card-image" style="background-image: url('${echapperHtml(item.image)}')">
-                        <span class="badge">${echapperHtml(item.source)}</span>
-                    </div>
-                    <div class="card-body">
-                        <span class="date">📅 ${echapperHtml(item.date)}</span>
-                        <h2 class="title">
-                            <a href="${echapperHtml(item.lien)}" target="_blank" rel="noopener noreferrer">
-                                ${echapperHtml(item.titre)}
-                            </a>
-                        </h2>
-                    </div>
-                </article>
-            `).join('');
-        }
+    # Écriture dans le fichier veille.json
+    with open("veille.json", "w", encoding="utf-8") as fichier_json:
+        json.dump(donnees_site_web, fichier_json, ensure_ascii=False, indent=4)
+        
+    print("[*] Fichier veille.json généré avec succès !")
 
-        function echapperHtml(texte) {
-            const div = document.createElement('div');
-            div.textContent = texte;
-            return div.innerHTML;
-        }
-
-        // Filtre dynamique avec la barre de recherche
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            const filtre = e.target.value.toLowerCase().trim();
-            const resultats = tousLesArticles.filter(art => 
-                art.titre.toLowerCase().includes(filtre) || 
-                art.source.toLowerCase().includes(filtre)
-            );
-            afficherArticles(resultats);
-        });
-
-        chargerVeille();
-    </script>
-</body>
-</html>
+if __name__ == "__main__":
+    generer_json_veille()
