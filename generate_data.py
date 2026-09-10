@@ -1,57 +1,97 @@
-import feedparser
-import json
-from datetime import datetime
-import time
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail de Veille Informatique & Cybersécurité</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Veille Tech & Cybersécurité</h1>
+            <p class="subtitle">Agrégateur d'actualités IT en temps réel</p>
+        </header>
 
-# Liste des flux RSS (Sites IT + liens RSS-Bridge pour réseaux sociaux)
-SOURCES = [
-    {"nom": "Le Monde Informatique", "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/toutes-les-actualites/rss.xml"},
-    {"nom": "ZDNet France", "url": "https://www.zdnet.fr/feeds/rss/actualites/"},
-    {"nom": "Les Numériques - Informatique", "url": "https://www.lesnumeriques.com/informatique/rss.xml"},
-    {"nom": "Developpez.com", "url": "https://www.developpez.com/index/rss"}
-]
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="🔍 Rechercher un sujet, un CVE, une technologie...">
+        </div>
 
-def recuperer_articles():
-    articles = []
-    
-    for source in SOURCES:
-        try:
-            print(f"Récupération : {source['nom']}...")
-            flux = feedparser.parse(source['url'])
+        <main id="articles-grid" class="grid">
+            <p class="loading">Chargement des actualités...</p>
+        </main>
+    </div>
+
+    <script>
+        let tousLesArticles = [];
+
+        async function chargerVeille() {
+            try {
+                // Lecture du fichier JSON généré par ton script Python
+                const reponse = await fetch('veille.json?v=' + new Date().getTime());
+                const donneesParSite = await reponse.json();
+
+                // On transforme le dictionnaire { "Site": [articles] } en un tableau d'articles
+                tousLesArticles = [];
+                for (const [nomSite, articles] of Object.entries(donneesParSite)) {
+                    articles.forEach(article => {
+                        tousLesArticles.push({
+                            ...article,
+                            source: nomSite
+                        });
+                    });
+                }
+
+                afficherArticles(tousLesArticles);
+            } catch (erreur) {
+                console.error("Erreur de chargement du JSON :", erreur);
+                document.getElementById('articles-grid').innerHTML = 
+                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord Veille_tech_json.py.</p>';
+            }
+        }
+
+        function afficherArticles(liste) {
+            const container = document.getElementById('articles-grid');
             
-            for item in flux.entries[:10]:  # Top 10 des derniers articles par source
-                date_struct = item.get('published_parsed') or item.get('updated_parsed')
-                if date_struct:
-                    timestamp = time.mktime(date_struct)
-                    date_affichee = time.strftime('%d/%m/%Y à %H:%M', date_struct)
-                else:
-                    timestamp = time.time()
-                    date_affichee = "Date inconnue"
+            if (liste.length === 0) {
+                container.innerHTML = '<p class="error">Aucun article ne correspond à la recherche.</p>';
+                return;
+            }
 
-                articles.append({
-                    "titre": item.title,
-                    "lien": item.link,
-                    "source": source['nom'],
-                    "date": date_affichee,
-                    "timestamp": timestamp
-                })
-        except Exception as e:
-            print(f"Erreur pour {source['nom']}: {e}")
+            container.innerHTML = liste.map(item => `
+                <article class="card">
+                    <div class="card-image" style="background-image: url('${echapperHtml(item.image)}')">
+                        <span class="badge">${echapperHtml(item.source)}</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="date">📅 ${echapperHtml(item.date)}</span>
+                        <h2 class="title">
+                            <a href="${echapperHtml(item.lien)}" target="_blank" rel="noopener noreferrer">
+                                ${echapperHtml(item.titre)}
+                            </a>
+                        </h2>
+                    </div>
+                </article>
+            `).join('');
+        }
 
-    # Tri chronologique inverse (du plus récent au plus ancien)
-    articles.sort(key=lambda x: x['timestamp'], reverse=True)
+        function echapperHtml(texte) {
+            const div = document.createElement('div');
+            div.textContent = texte;
+            return div.innerHTML;
+        }
 
-    donnees = {
-        "derniere_mise_a_jour": datetime.now().strftime('%d/%m/%Y à %H:%M'),
-        "nb_articles": len(articles),
-        "articles": articles
-    }
+        // Filtre dynamique avec la barre de recherche
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const filtre = e.target.value.toLowerCase().trim();
+            const resultats = tousLesArticles.filter(art => 
+                art.titre.toLowerCase().includes(filtre) || 
+                art.source.toLowerCase().includes(filtre)
+            );
+            afficherArticles(resultats);
+        });
 
-    # Sauvegarde au format JSON
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(donnees, f, ensure_ascii=False, indent=4)
-        
-    print(f"✅ data.json généré avec {len(articles)} articles.")
-
-if __name__ == "__main__":
-    recuperer_articles()
+        chargerVeille();
+    </script>
+</body>
+</html>
