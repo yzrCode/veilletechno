@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portail de Veille Informatique & Cybersécurité</title>
+    <title>CyberWatch — Portail de Veille Technologique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>⚡ Veille Tech & Cybersécurité</h1>
-            <p class="subtitle">Agrégateur d'actualités IT en temps réel</p>
-        </header>
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="🔍 Rechercher un sujet, un CVE, une technologie...">
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="brand-icon">🛡️</span>
+                <div>
+                    <h1>CyberWatch</h1>
+                    <p class="brand-tagline">Veille automatisée & Cybersécurité</p>
+                </div>
+            </div>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span id="article-count">Chargement...</span>
+            </div>
         </div>
+    </header>
 
-        <main id="articles-grid" class="grid">
-            <p class="loading">Chargement des actualités...</p>
-        </main>
-    </div>
+    <main class="main-container">
+        
+        <section class="controls-section">
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" placeholder="Rechercher une menace, un CVE, un outil..." autocomplete="off">
+            </div>
+        </section>
+
+        <section id="articles-grid" class="grid">
+            <div class="skeleton-loader">
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 CyberWatch — Généré automatiquement via GitHub Actions</p>
+    </footer>
 
     <script>
         let tousLesArticles = [];
@@ -28,6 +59,8 @@
         async function chargerVeille() {
             try {
                 const reponse = await fetch('data.json?v=' + new Date().getTime());
+                if (!reponse.ok) throw new Error('Fichier data.json introuvable');
+                
                 const donneesParSite = await reponse.json();
 
                 tousLesArticles = [];
@@ -40,40 +73,63 @@
                     });
                 }
 
+                // Tri optionnel : garder la liste originale
+                mettreAJourCompteur(tousLesArticles.length);
                 afficherArticles(tousLesArticles);
             } catch (erreur) {
                 console.error("Erreur de chargement du JSON :", erreur);
-                document.getElementById('articles-grid').innerHTML = 
-                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord generate_data.py.</p>';
+                document.getElementById('article-count').textContent = 'Hors ligne';
+                document.getElementById('articles-grid').innerHTML = `
+                    <div class="error-box">
+                        <h3>❌ Impossible de charger les données</h3>
+                        <p>Vérifiez que le fichier <code>data.json</code> est bien présent et déployé sur GitHub Pages.</p>
+                    </div>`;
             }
+        }
+
+        function mettreAJourCompteur(total) {
+            const countEl = document.getElementById('article-count');
+            countEl.textContent = `${total} article${total > 1 ? 's' : ''} disponible${total > 1 ? 's' : ''}`;
         }
 
         function afficherArticles(liste) {
             const container = document.getElementById('articles-grid');
             
             if (liste.length === 0) {
-                container.innerHTML = '<p class="error">Aucun article ne correspond à la recherche.</p>';
+                container.innerHTML = `
+                    <div class="empty-box">
+                        <p>🔎 Aucun article ne correspond à votre recherche.</p>
+                    </div>`;
                 return;
             }
 
             container.innerHTML = liste.map(item => `
                 <article class="card">
-                    <div class="card-image" style="background-image: url('${echapperHtml(item.image)}')">
+                    <div class="card-header">
+                        <img src="${echapperHtml(item.image)}" alt="Illustration" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=400'">
                         <span class="badge">${echapperHtml(item.source)}</span>
                     </div>
                     <div class="card-body">
-                        <span class="date">📅 ${echapperHtml(item.date)}</span>
-                        <h2 class="title">
+                        <div class="card-meta">
+                            <span class="date-tag">📅 ${echapperHtml(item.date)}</span>
+                        </div>
+                        <h2 class="card-title">
                             <a href="${echapperHtml(item.lien)}" target="_blank" rel="noopener noreferrer">
                                 ${echapperHtml(item.titre)}
                             </a>
                         </h2>
+                    </div>
+                    <div class="card-footer">
+                        <a href="${echapperHtml(item.lien)}" target="_blank" rel="noopener noreferrer" class="read-more">
+                            Lire la suite <span class="arrow">→</span>
+                        </a>
                     </div>
                 </article>
             `).join('');
         }
 
         function echapperHtml(texte) {
+            if (!texte) return '';
             const div = document.createElement('div');
             div.textContent = texte;
             return div.innerHTML;
@@ -86,6 +142,7 @@
                 art.source.toLowerCase().includes(filtre)
             );
             afficherArticles(resultats);
+            mettreAJourCompteur(resultats.length);
         });
 
         chargerVeille();
