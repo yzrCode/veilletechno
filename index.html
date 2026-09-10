@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>🔒 Veille Tech & Cybersécurité</h1>
+            <h1>⚡ Veille Tech & Cybersécurité</h1>
             <p class="subtitle">Agrégateur d'actualités IT en temps réel</p>
         </header>
 
@@ -27,11 +27,9 @@
 
         async function chargerVeille() {
             try {
-                // Lecture du fichier JSON généré par ton script Python
-                const reponse = await fetch('veille.json?v=' + new Date().getTime());
+                const reponse = await fetch('data.json?v=' + new Date().getTime());
                 const donneesParSite = await reponse.json();
 
-                // On transforme le dictionnaire { "Site": [articles] } en un tableau d'articles
                 tousLesArticles = [];
                 for (const [nomSite, articles] of Object.entries(donneesParSite)) {
                     articles.forEach(article => {
@@ -46,7 +44,7 @@
             } catch (erreur) {
                 console.error("Erreur de chargement du JSON :", erreur);
                 document.getElementById('articles-grid').innerHTML = 
-                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord Veille_tech_json.py.</p>';
+                    '<p class="error">❌ Erreur lors du chargement des données. Exécutez d\'abord generate_data.py.</p>';
             }
         }
 
@@ -81,7 +79,6 @@
             return div.innerHTML;
         }
 
-        // Filtre dynamique avec la barre de recherche
         document.getElementById('search-input').addEventListener('input', (e) => {
             const filtre = e.target.value.toLowerCase().trim();
             const resultats = tousLesArticles.filter(art => 
