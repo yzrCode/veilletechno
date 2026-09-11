@@ -53,59 +53,101 @@
         <p>© 2026 CyberWatch — Généré automatiquement via GitHub Actions</p>
     </footer>
 
-    <script>
-        let tousLesArticles = [];
+<script>
+    let tousLesArticles = [];
+    // Récupère les liens épinglés sauvegardés dans le navigateur
+    let epingles = JSON.parse(localStorage.getItem('cyberwatch_epingles')) || [];
 
-        async function chargerVeille() {
-            try {
-                const reponse = await fetch('data.json?v=' + new Date().getTime());
-                if (!reponse.ok) throw new Error('Fichier data.json introuvable');
-                
-                const donneesParSite = await reponse.json();
-
-                tousLesArticles = [];
-                for (const [nomSite, articles] of Object.entries(donneesParSite)) {
-                    articles.forEach(article => {
-                        tousLesArticles.push({
-                            ...article,
-                            source: nomSite
-                        });
-                    });
-                }
-
-                // Tri optionnel : garder la liste originale
-                mettreAJourCompteur(tousLesArticles.length);
-                afficherArticles(tousLesArticles);
-            } catch (erreur) {
-                console.error("Erreur de chargement du JSON :", erreur);
-                document.getElementById('article-count').textContent = 'Hors ligne';
-                document.getElementById('articles-grid').innerHTML = `
-                    <div class="error-box">
-                        <h3>❌ Impossible de charger les données</h3>
-                        <p>Vérifiez que le fichier <code>data.json</code> est bien présent et déployé sur GitHub Pages.</p>
-                    </div>`;
-            }
-        }
-
-        function mettreAJourCompteur(total) {
-            const countEl = document.getElementById('article-count');
-            countEl.textContent = `${total} article${total > 1 ? 's' : ''} disponible${total > 1 ? 's' : ''}`;
-        }
-
-        function afficherArticles(liste) {
-            const container = document.getElementById('articles-grid');
+    async function chargerVeille() {
+        try {
+            const reponse = await fetch('data.json?v=' + new Date().getTime());
+            if (!reponse.ok) throw new Error('Fichier data.json introuvable');
             
-            if (liste.length === 0) {
-                container.innerHTML = `
-                    <div class="empty-box">
-                        <p>🔎 Aucun article ne correspond à votre recherche.</p>
-                    </div>`;
-                return;
+            const donneesParSite = await reponse.json();
+
+            tousLesArticles = [];
+            for (const [nomSite, articles] of Object.entries(donneesParSite)) {
+                articles.forEach(article => {
+                    tousLesArticles.push({
+                        ...article,
+                        source: nomSite
+                    });
+                });
             }
 
-            container.innerHTML = liste.map(item => `
-                <article class="card">
+            filtrerEtAfficher();
+        } catch (erreur) {
+            console.error("Erreur de chargement du JSON :", erreur);
+            document.getElementById('article-count').textContent = 'Hors ligne';
+            document.getElementById('articles-grid').innerHTML = `
+                <div class="error-box">
+                    <h3>❌ Impossible de charger les données</h3>
+                    <p>Vérifiez que le fichier <code>data.json</code> est bien présent et déployé sur GitHub Pages.</p>
+                </div>`;
+        }
+    }
+
+    function basculerEpingle(lien) {
+        if (epingles.includes(lien)) {
+            epingles = epingles.filter(url => url !== lien);
+        } else {
+            epingles.push(lien);
+        }
+        // Sauvegarde dans le navigateur
+        localStorage.setItem('cyberwatch_epingles', JSON.stringify(epingles));
+        filtrerEtAfficher();
+    }
+
+    function trierAvecEpingles(liste) {
+        return [...liste].sort((a, b) => {
+            const aEpingle = epingles.includes(a.lien);
+            const bEpingle = epingles.includes(b.lien);
+            if (aEpingle && !bEpingle) return -1;
+            if (!aEpingle && bEpingle) return 1;
+            return 0;
+        });
+    }
+
+    function filtrerEtAfficher() {
+        const recherche = document.getElementById('search-input').value.toLowerCase().trim();
+        
+        let resultats = tousLesArticles.filter(art => 
+            art.titre.toLowerCase().includes(recherche) || 
+            art.source.toLowerCase().includes(recherche)
+        );
+
+        resultats = trierAvecEpingles(resultats);
+
+        mettreAJourCompteur(resultats.length);
+        afficherArticles(resultats);
+    }
+
+    function mettreAJourCompteur(total) {
+        const countEl = document.getElementById('article-count');
+        countEl.textContent = `${total} article${total > 1 ? 's' : ''}`;
+    }
+
+    function afficherArticles(liste) {
+        const container = document.getElementById('articles-grid');
+        
+        if (liste.length === 0) {
+            container.innerHTML = `
+                <div class="empty-box">
+                    <p>🔎 Aucun article ne correspond à votre recherche.</p>
+                </div>`;
+            return;
+        }
+
+        container.innerHTML = liste.map(item => {
+            const estEpingle = epingles.includes(item.lien);
+            return `
+                <article class="card ${estEpingle ? 'pinned' : ''}">
                     <div class="card-header">
+                        <button class="pin-btn ${estEpingle ? 'active' : ''}" 
+                                onclick="basculerEpingle('${echapperHtml(item.lien)}')" 
+                                title="${estEpingle ? 'Désépingler' : 'Épingler en haut'}">
+                            ${estEpingle ? '📌' : '📍'}
+                        </button>
                         <img src="${echapperHtml(item.image)}" alt="Illustration" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=400'">
                         <span class="badge">${echapperHtml(item.source)}</span>
                     </div>
@@ -125,27 +167,20 @@
                         </a>
                     </div>
                 </article>
-            `).join('');
-        }
+            `;
+        }).join('');
+    }
 
-        function echapperHtml(texte) {
-            if (!texte) return '';
-            const div = document.createElement('div');
-            div.textContent = texte;
-            return div.innerHTML;
-        }
+    function echapperHtml(texte) {
+        if (!texte) return '';
+        const div = document.createElement('div');
+        div.textContent = texte;
+        return div.innerHTML;
+    }
 
-        document.getElementById('search-input').addEventListener('input', (e) => {
-            const filtre = e.target.value.toLowerCase().trim();
-            const resultats = tousLesArticles.filter(art => 
-                art.titre.toLowerCase().includes(filtre) || 
-                art.source.toLowerCase().includes(filtre)
-            );
-            afficherArticles(resultats);
-            mettreAJourCompteur(resultats.length);
-        });
+    document.getElementById('search-input').addEventListener('input', filtrerEtAfficher);
 
-        chargerVeille();
-    </script>
+    chargerVeille();
+</script>
 </body>
 </html>
