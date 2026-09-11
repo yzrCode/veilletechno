@@ -69,6 +69,12 @@
             "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
         },
         {
+            "titre": "Quitter Gmail, ils l'ont fait : les conseils pour le grand saut",
+            "lien": "https://reporterre.net/Quitter-Gmail-ils-l-ont-fait-les-conseils-pour-le-grand-saut",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
+        },
+        {
             "titre": "Actualité Cybersécurité de la semaine du 07/09/2026",
             "lien": "https://erreur403.fr/p/erreur-403-93-l-anssi-passe-a-l-injonction-avec-reactiv-et-patch-tuesday-record-de-973-failles/",
             "date": "10/09/2026",
@@ -113,12 +119,6 @@
         {
             "titre": "Sidebery, l'extension Firefox indispensable (pour moi et mes 300 onglets)",
             "lien": "https://blog.flozz.fr/2026/09/07/sidebery-lextension-firefox-indispensable-pour-moi-et-mes-300-onglets/",
-            "date": "07/09/2026",
-            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
-        },
-        {
-            "titre": "Liens intéressants Journal du hacker semaine #36",
-            "lien": "https://blog.journalduhacker.net/index.php?article603/liens-interessants-journal-du-hacker-semaine-36-2026",
             "date": "07/09/2026",
             "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
         }
@@ -255,7 +255,7 @@
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/06/selection_expert_2026_zdnet_une.png"
         },
         {
-            "titre": "Matt Riley, Sharp : « Cybersécurité et IA : remettre l'humain au cœur de la résilience »",
+            "titre": "Matt Riley, RSSI Sharp : « Cybersécurité et IA : remettre l'humain au cœur de la résilience »",
             "lien": "https://www.zdnet.fr/tribune/matt-riley-sharp-cybersecurite-et-ia-remettre-lhumain-au-coeur-de-la-resilience-503174.htm#xtor=RSS-1",
             "date": "11/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/08/cybersecurite-approche-avec-ia-carriere-prati.jpg"
@@ -373,67 +373,85 @@
     ],
     "CVE Feed": [
         {
-            "titre": "CVE-2026-85979 - Puppet Enterprise Command Injection Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-85979",
+            "titre": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89090",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87988 - Mistral Vibe Arbitrary File Access Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87988",
+            "titre": "CVE-2026-82617 - Apache OpenNLP, Apache OpenNLP: ReDoS / stack exhaustion in RegexNameFinderFactory built-in EMAIL and URL patterns",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82617",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87987 - Mistral Vibe Arbitrary Code Execution Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87987",
+            "titre": "CVE-2026-62107 - WordPress Masteriyo - LMS plugin <= 3.4.0 - PHP Object Injection vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62107",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87986 - Mistral Vibe Arbitrary Code Execution Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87986",
+            "titre": "CVE-2026-62106 - WordPress SMS Alert Order Notifications plugin <= 3.9.9 - Privilege Escalation vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62106",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87985 - Mistral Vibe Arbitrary Code Execution Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87985",
+            "titre": "CVE-2026-62105 - WordPress ThemeREX Addons plugin < 2.45.0 - PHP Object Injection vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62105",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87984 - Mistral Vibe Arbitrary File Write Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87984",
+            "titre": "CVE-2026-62103 - WordPress Everest Forms plugin <= 3.6.0 - PHP Object Injection vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62103",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-87983 - Mistral Vibe Arbitrary File Read Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87983",
+            "titre": "CVE-2026-62102 - WordPress Gato GraphQL plugin <= 19.2.3 - Privilege Escalation vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62102",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-82578 - NextGen Healthcare Mirth Connect Improper Restriction of XML External Entity Reference",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82578",
+            "titre": "CVE-2026-72710 - SPIP < 4.4.18 Remote Code Execution via editer_objet.php Job Queue Injection",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-72710",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-78224 - NextGen Healthcare Mirth Connect Improper Restriction of XML External Entity Reference",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78224",
+            "titre": "CVE-2026-72709 - SPIP < 4.4.18 Missing Authorization via ecrire/action/ editer_auteur",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-72709",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-89212 - XML External Entity in Akana API Platform",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89212",
+            "titre": "CVE-2026-72708 - SPIP < 4.4.18 Unauthenticated SQL Injection via sitemap annee Parameter",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-72708",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
     ],
     "Bleeping": [
+        {
+            "titre": "Florida confirms DMV database breached via stolen police account",
+            "lien": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+            "lien": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "Artifactory flaws chained in attacks deploying backdoor malware",
+            "lien": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
         {
             "titre": "How Threat Actors Are Turning Trusted AI Platforms Into an Attack Surface",
             "lien": "https://www.bleepingcomputer.com/news/security/how-threat-actors-are-turning-trusted-ai-platforms-into-an-attack-surface/",
@@ -475,27 +493,45 @@
             "lien": "https://www.bleepingcomputer.com/news/microsoft/september-windows-server-updates-break-remote-desktop-services/",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Surfshark VPN says hackers breached internal testing, proxy servers",
-            "lien": "https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Microsoft Excel KB5002914 update breaks copy and paste for some users",
-            "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-excel-kb5002914-update-breaks-copy-and-paste-for-some-users/",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "AI-powered attack exploited PaperCut flaws to hack 395 organizations",
-            "lien": "https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
         }
     ],
     "LeMagIT": [
+        {
+            "titre": "Mistral AI et Cloudera s’allient autour de l’IA privée",
+            "lien": "https://www.lemagit.fr/actualites/366649604/Mistral-AI-et-Cloudera-sallient-autour-de-lIA-privee",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
+            "titre": "Virtualisation : comment Rakuten France a basculé vers Proxmox et l’IaC",
+            "lien": "https://www.lemagit.fr/etude/Virtualisation-comment-Rakuten-France-a-bascule-vers-Proxmox-et-lIaC",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
+            "titre": "Quand les modèles d'Anthropic sont détournés à des fins malveillantes",
+            "lien": "https://www.lemagit.fr/actualites/366650360/Quand-les-modeles-dAnthropic-sont-detournes-a-des-fins-malveillantes",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
+            "titre": "Cyberhebdo du 11 septembre 2026 : Jaguar Land Rover encore fragilisé",
+            "lien": "https://www.lemagit.fr/actualites/366650377/Cyberhebdo-du-11-septembre-2026-Jaguar-Land-Rover-encore-fragilise",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
+            "titre": "Google vend désormais des collègues IA. Qu’est-ce que ça change pour votre entreprise ?",
+            "lien": "https://www.lemagit.fr/tribune/Google-vend-desormais-des-collegues-et-plus-des-assistants-IA-quest-ce-que-cela-change-pour-votre",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
+            "titre": "Le Software-Defined Manufacturing va redéfinir la demande en semiconducteurs industriels",
+            "lien": "https://www.lemagit.fr/tribune/Le-Software-Defined-Manufacturing-va-redefinir-la-demande-en-semiconducteurs-industriels",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
         {
             "titre": "Databricks lance un modèle pour optimiser la recherche de données IA",
             "lien": "https://www.lemagit.fr/actualites/366649601/Databricks-lance-un-modele-pour-optimiser-la-recherche-de-donnees-IA",
@@ -518,42 +554,6 @@
             "titre": "Le tiercé létal de l’IA agentique : ce que les RSSI doivent savoir",
             "lien": "https://www.lemagit.fr/conseil/Le-tierce-letal-de-lIA-agentique-ce-que-les-RSSI-doivent-savoir",
             "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "L’avènement de l’IA agentique dans le cycle d’attaque",
-            "lien": "https://www.lemagit.fr/actualites/366650296/Lavenement-de-lIA-agentique-dans-le-cycle-dattaque",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Vulnérabilités : l’écosystème open source face aux dilemmes du tout IA",
-            "lien": "https://www.lemagit.fr/actualites/366650314/Vulnerabilites-lecosysteme-open-source-face-aux-dilemmes-du-tout-IA",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Souveraineté : Nutanix exécute les postes Windows d’Azure sur site",
-            "lien": "https://www.lemagit.fr/actualites/366650229/Souverainete-Nutanix-execute-sur-site-les-postes-Windows-dAzure",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Oxford Economics et PwC prédisent le développement des datacenters",
-            "lien": "https://www.lemagit.fr/actualites/366650225/Oxford-Economics-et-PwC-predisent-le-developpement-des-datacenters",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Avant d’attaquer Hugging Face, les agents d’OpenAI ont détourné un wiki",
-            "lien": "https://www.lemagit.fr/actualites/366650145/Avant-dattaquer-Hugging-Face-les-agents-dOpenAI-ont-detourne-un-wiki",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "CCaaS : Genesys ouvre sa plateforme aux agents IA dédiés à la relation client",
-            "lien": "https://www.lemagit.fr/actualites/366650233/Genesys-ouvre-sa-plateforme-aux-agents-IA-dedies-a-la-relation-client",
-            "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
         }
     ],
@@ -621,6 +621,18 @@
     ],
     "ChannelNews": [
         {
+            "titre": "Oracle : croissance de 30% au premier trimestre, grâce à l’envolée des infrastructures cloud",
+            "lien": "https://www.channelnews.fr/oracle-croissance-de-30-au-premier-trimestre-grace-a-lenvolee-des-infrastructures-cloud-158827",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
+        },
+        {
+            "titre": "Mistral AI et Cloudera s’allient pour rapprocher l’IA des données d’entreprise",
+            "lien": "https://www.channelnews.fr/mistral-ai-et-cloudera-sallient-pour-rapprocher-lia-des-donnees-dentreprise-158820",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
+        },
+        {
             "titre": "Le prix de la mémoire vive amplifié par des bots",
             "lien": "https://www.channelnews.fr/le-prix-de-la-memoire-vive-amplifie-par-des-bots-158813",
             "date": "11/09/2026",
@@ -667,21 +679,21 @@
             "lien": "https://www.channelnews.fr/cegid-et-silae-sappretent-a-fusionner-pour-batir-un-geant-du-logiciel-de-gestion-158787",
             "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
-        },
-        {
-            "titre": "80% des smartphones commercialisés en Europe ne respectent toujours pas les règles européennes du droit à la réparation",
-            "lien": "https://www.channelnews.fr/80-des-smartphones-commercialises-en-europe-ne-respectent-toujours-pas-les-regles-europeennes-du-droit-a-la-reparation-158778",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
-        },
-        {
-            "titre": "Startups : les levées de fonds bondissent de 65% au premier semestre",
-            "lien": "https://www.channelnews.fr/startups-les-levees-de-fonds-bondissent-de-65-au-premier-semestre-158796",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
         }
     ],
     "next.ink": [
+        {
+            "titre": "☕️ Le CEO d’Automattic de retour aux commandes de WordPress.com et Tumblr",
+            "lien": "https://next.ink/brief-article/le-ceo-dautomattic-evince-par-le-ca-du-proprietaire-de-wordpress-com-et-tumblr/",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500"
+        },
+        {
+            "titre": "Cybersécurité : l’âge de l’industrialisation, selon Anthropic",
+            "lien": "https://next.ink/256115/cybersecurite-lage-de-lindustrialisation-selon-anthropic/",
+            "date": "11/09/2026",
+            "image": "https://next.ink/wp-content/uploads/2025/02/bombes_ai.webp"
+        },
         {
             "titre": "En Europe, l’usage public des lunettes Meta avec l’IA jugé illégal par des experts",
             "lien": "https://next.ink/255956/en-europe-lusage-public-des-lunettes-meta-avec-lia-juge-illegal-par-des-experts/",
@@ -729,18 +741,6 @@
             "lien": "https://next.ink/255892/apple-sattaque-aux-images-truquees-avec-reference-image-et-synthid/",
             "date": "11/09/2026",
             "image": "https://next.ink/wp-content/uploads/2026/09/apple-reference-image.jpg"
-        },
-        {
-            "titre": "☕️ Vivaldi sur Android prend en charge les extensions Desktop du Chrome Web Store",
-            "lien": "https://next.ink/brief-article/vivaldi-sur-android-prend-en-charge-les-extensions-desktop-du-chrome-web-store/",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500"
-        },
-        {
-            "titre": "Baisse de prix inattendue pour le Framework Laptop 13 Pro",
-            "lien": "https://next.ink/255899/baisse-de-prix-inattendue-pour-le-framework-laptop-13-pro/",
-            "date": "11/09/2026",
-            "image": "https://next.ink/wp-content/uploads/2026/09/image-59.png"
         }
     ]
 }
