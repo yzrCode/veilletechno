@@ -249,6 +249,12 @@
     ],
     "ZDNET": [
         {
+            "titre": "Web pratique : pour naviguer avec l’IA utilisez la Smart Window de Firefox",
+            "lien": "https://www.zdnet.fr/pratique/web-pratique-pour-naviguer-avec-lia-utilisez-la-smart-window-de-firefox-503146.htm#xtor=RSS-1",
+            "date": "11/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/firefox-smart-window-web-pratique.jpg"
+        },
+        {
             "titre": "Votre fournisseur d’IA pourrait vous exposer à des poursuites judiciaires : ce que les experts vous conseillent de faire",
             "lien": "https://www.zdnet.fr/actualites/votre-fournisseur-dia-pourrait-vous-exposer-a-des-poursuites-judiciaires-ce-que-les-experts-vous-conseillent-de-faire-503311.htm#xtor=RSS-1",
             "date": "10/09/2026",
@@ -301,12 +307,6 @@
             "lien": "https://www.zdnet.fr/actualites/cra-a-partir-de-demain-il-faudra-signaler-les-failles-exploitees-502997.htm#xtor=RSS-1",
             "date": "10/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/Europea.jpg"
-        },
-        {
-            "titre": "Le CNRS s’alarme des usages frauduleux de l’IA dans la recherche scientifique",
-            "lien": "https://www.zdnet.fr/actualites/le-cnrs-salarme-des-usages-frauduleux-de-lia-dans-la-recherche-scientifique-503215.htm#xtor=RSS-1",
-            "date": "10/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2024/03/womansytdentgettyimages-1516277094-1-1.jpg"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,67 +373,79 @@
     ],
     "CVE Feed": [
         {
-            "titre": "CVE-2026-88025 - GridFS data disclosure and deletion via query-operator injection in file IDs in the MongoDB C# Driver",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88025",
+            "titre": "CVE-2026-16174 - Netskope Endpoint DLP Driver Integer Overflow Leading to Kernel Pool Overflow",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-16174",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88024 - GridFS data disclosure and deletion via query-operator injection in file IDs in the MongoDB Rust Driver",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88024",
+            "titre": "CVE-2026-87958 - IBM® Db2® is vulnerable to a denial of service where a specific functionality on a Db2 server can be disabled by a privileged user under certain conditions",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87958",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88023 - GridFS data disclosure and deletion via query-operator injection in file IDs in the MongoDB PHP Library",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88023",
+            "titre": "CVE-2026-84889 - A path traversal vulnerability in file handling components could allow an authenticated attacker to write files to arbitrary locations on the server filesystem",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-84889",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-89046 - zstd-jni 1.5.5-6 through 1.5.7-13 Out-of-Bounds Read via Negative Offset",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89046",
+            "titre": "CVE-2026-82107 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82107",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-89043 - passport-saml-encrypted through 0.1.13 XML Signature Wrapping via Assertion Prepending",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89043",
+            "titre": "CVE-2026-82100 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82100",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-89042 - passport-saml-encrypted through 0.1.13 Authentication Bypass via Missing Signature Verification",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89042",
+            "titre": "CVE-2026-82099 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82099",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88022 - Unauthorized document disclosure and deletion via query-operator injection in explicit equality filters in MongoDB integration for Laravel",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88022",
+            "titre": "CVE-2026-82098 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82098",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88049 - Tesseract: Heap out-of-bounds write in LSTM::Forward via na_/gate-matrix dimension mismatch",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88049",
+            "titre": "CVE-2026-82097 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82097",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88048 - Tesseract: Heap out-of-bounds write/read in FullyConnected::Forward via layer/weight-matrix dimension mismatch",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88048",
+            "titre": "CVE-2026-82095 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82095",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-88047 - Tesseract: ReadNormProtos stack buffer overflow",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88047",
+            "titre": "CVE-2026-82092 - DataStage on Cloud Pak for Data has several vulnerabilities due to open source software",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-82092",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
     ],
     "Bleeping": [
+        {
+            "titre": "New Android malware encrypts files, steals data, and harasses victims",
+            "lien": "https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/",
+            "date": "10/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "September Windows Server updates break Remote Desktop Services",
+            "lien": "https://www.bleepingcomputer.com/news/microsoft/september-windows-server-updates-break-remote-desktop-services/",
+            "date": "10/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
         {
             "titre": "Surfshark VPN says hackers breached internal testing, proxy servers",
             "lien": "https://www.bleepingcomputer.com/news/security/surfshark-vpn-says-hackers-breached-internal-testing-proxy-servers/",
@@ -481,21 +493,15 @@
             "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-resolves-mouse-settings-reset-bug-windows-11-update/",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "CISA: WatchGuard RCE flaw now exploited in ransomware attacks",
-            "lien": "https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Microsoft fixes bug that wiped Windows desktop settings",
-            "lien": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-wiped-windows-desktop-settings/",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
         }
     ],
     "LeMagIT": [
+        {
+            "titre": "Comment les agents d’OpenAI ont détourné un wiki",
+            "lien": "https://www.lemagit.fr/dessin/Comment-les-agents-dOpenAI-ont-detourne-un-wiki",
+            "date": "10/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
         {
             "titre": "Le tiercé létal de l'IA agentique : ce que les RSSI doivent savoir",
             "lien": "https://www.lemagit.fr/conseil/Le-tierce-letal-de-lIA-agentique-ce-que-les-RSSI-doivent-savoir",
@@ -547,12 +553,6 @@
         {
             "titre": "IA : les entreprises occidentales gagneraient à mieux comprendre la stratégie chinoise",
             "lien": "https://www.lemagit.fr/tribune/IA-les-entreprises-occidentales-gagneraient-a-mieux-comprendre-la-strategie-chinoise",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Cegid et Silae : Silver Lake fusionne ses deux pépites françaises du logiciel de gestion",
-            "lien": "https://www.lemagit.fr/actualites/366650222/Cegid-et-Silae-Silver-Lake-fusionne-ses-deux-pepites-francaises-du-logiciel-de-gestion",
             "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
         }
@@ -621,6 +621,12 @@
     ],
     "ChannelNews": [
         {
+            "titre": "C&C France placé en redressement judiciaire après quatre années d’expansion débridée",
+            "lien": "https://www.channelnews.fr/cc-france-place-en-redressement-judiciaire-apres-quatre-annees-dexpansion-debridee-158816",
+            "date": "10/09/2026",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
+        },
+        {
             "titre": "Emmanuel Pugliesi prend la direction générale de Celeste",
             "lien": "https://www.channelnews.fr/emmanuel-pugliesi-prend-la-direction-generale-de-celeste-158807",
             "date": "10/09/2026",
@@ -671,12 +677,6 @@
         {
             "titre": "OroCommerce lance OroMomentum pour redéfinir les coûts et accélérer le commerce B2B d’entreprise",
             "lien": "https://www.channelnews.fr/orocommerce-lance-oromomentum-pour-redefinir-les-couts-et-accelerer-le-commerce-b2b-dentreprise-158703",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
-        },
-        {
-            "titre": "ITS Group affiche un chiffre d’affaires consolidé de 91,6 M€ au premier semestre 2026, en croissance de 13 %",
-            "lien": "https://www.channelnews.fr/its-group-affiche-un-chiffre-daffaires-consolide-de-916-me-au-premier-semestre-2026-en-croissance-de-13-158706",
             "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
         }
