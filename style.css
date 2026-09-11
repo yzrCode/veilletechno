@@ -311,3 +311,35 @@ body {
     color: var(--text-muted);
     background-color: #ffffff;
 }
+/* Bouton Épingler / Favoris */
+.pin-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    z-index: 5;
+    box-shadow: var(--shadow-sm);
+}
+
+.pin-btn:hover {
+    transform: scale(1.1);
+}
+
+.pin-btn.active {
+    background-color: #fef3c7;
+    border-color: #f59e0b;
+}
+
+.card.pinned {
+    border: 2px solid var(--primary);
+}
