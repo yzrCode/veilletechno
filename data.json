@@ -249,6 +249,12 @@
     ],
     "ZDNET": [
         {
+            "titre": "Simplicité avant tout : notre verdict sur le Synology BeeStation Plus 8 To",
+            "lien": "https://www.zdnet.fr/guide-achat/simplicite-avant-tout-notre-verdict-sur-le-synology-beestation-plus-8-to-503247.htm#xtor=RSS-1",
+            "date": "12/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/synology-beestation-plus.jpg"
+        },
+        {
             "titre": "Quels sont les meilleurs vidéoprojecteurs DLP pour les pros en 2026 ?",
             "lien": "https://www.zdnet.fr/selection-expert-zdnet-france/quels-sont-les-meilleurs-videoprojecteurs-dlp-pour-les-pros-en-2026-503397.htm#xtor=RSS-1",
             "date": "11/09/2026",
@@ -301,12 +307,6 @@
             "lien": "https://www.zdnet.fr/actualites/dma-google-revoit-ses-resultats-de-recherche-en-europe-et-assure-que-cela-penalise-les-entreprises-europeennes-503353.htm#xtor=RSS-1",
             "date": "11/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2025/10/google-recherche.jpg"
-        },
-        {
-            "titre": "Je suis ravi de l’ouverture variable de l’iPhone 18 Pro, mais il lui manque une fonctionnalité clé au niveau de l’appareil photo",
-            "lien": "https://www.zdnet.fr/actualites/je-suis-ravi-de-louverture-variable-de-liphone-18-pro-mais-il-lui-manque-une-fonctionnalite-cle-au-niveau-de-lappareil-photo-503347.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/dsc00611.webp"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,6 +373,36 @@
     ],
     "CVE Feed": [
         {
+            "titre": "CVE-2026-78175 - Tutor LMS <= 4.0.7 - Authenticated (Subscriber+) PHP Object Injection to Remote Code Execution",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78175",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-78159 - The Events Calendar <= 6.17.3 - Unauthenticated Code Injection to Remote Code Execution via Widget 'classes' Map Callable Invocation",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78159",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-78006 - The Events Calendar <= 6.17.4 - Unauthenticated PHP Object Injection to Remote Code Execution",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78006",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-87719 - Deserialization of Untrusted Data in GitLab",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-87719",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-85706 - GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability - [Actively Exploited]",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-85706",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
             "titre": "CVE-2026-89266 - stb_vorbis through 1.22 heap buffer overflow via codebook multiplicands",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-89266",
             "date": "12/09/2026",
@@ -399,36 +429,6 @@
         {
             "titre": "CVE-2026-44715 - OpenMRS has Broken Access Control in HL7 Configuration",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-44715",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-54174 - melange: Incomplete package integrity verification allows data section substitution",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-54174",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-49464 - NL Portal: IDOR allows any authenticated user to complete and tamper with another user's taak",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-49464",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-53952 - GetSimple CMS & GetSimpleCMS-CE have an Unauthenticated Admin Account Creation via Setup Logic Flaw",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-53952",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-79395 - Xiongmai IP Camera Sofia IPC Daemon Improper Authentication Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-79395",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-62107 - WordPress Masteriyo - LMS plugin <= 3.4.0 - PHP Object Injection vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-62107",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
