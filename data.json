@@ -63,6 +63,24 @@
     ],
     "Journal du Hacker": [
         {
+            "titre": "Sideshow : comprendre le travail des agents, visuellement",
+            "lien": "https://www.youtube.com/watch?v=WprHTwKBfNQ",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
+        },
+        {
+            "titre": "Sum Types : rendre les états impossibles impossibles",
+            "lien": "https://www.youtube.com/watch?v=SW9Il8IbKHM",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
+        },
+        {
+            "titre": "La cheatsheet de vos CFP",
+            "lien": "http://virginie-blog.pageaud.net/articles/tech/2026/cfp/",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
+        },
+        {
             "titre": "Veille #73 - 40 actus qu'il ne fallait pas rater cette semaine",
             "lien": "https://www.camilleroux.com/openwhispr-libreoffice-mistral-veille-73/",
             "date": "11/09/2026",
@@ -102,24 +120,6 @@
             "titre": "Google n'envoie plus de visiteurs, et après ?",
             "lien": "https://www.arsouyes.org/articles/2026/2026-09-07_Google/",
             "date": "08/09/2026",
-            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
-        },
-        {
-            "titre": "Lettre ouverte pour sauver les événements tech en France",
-            "lien": "https://lettreouverte.afup.org/",
-            "date": "08/09/2026",
-            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
-        },
-        {
-            "titre": "PostgreSQL Migrator 1.0 stable",
-            "lien": "https://blog.dalibo.com/2026/09/07/postgresql-migrator-1.html",
-            "date": "07/09/2026",
-            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
-        },
-        {
-            "titre": "Sidebery, l'extension Firefox indispensable (pour moi et mes 300 onglets)",
-            "lien": "https://blog.flozz.fr/2026/09/07/sidebery-lextension-firefox-indispensable-pour-moi-et-mes-300-onglets/",
-            "date": "07/09/2026",
             "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
         }
     ],
@@ -249,6 +249,18 @@
     ],
     "ZDNET": [
         {
+            "titre": "Autonomie record, écran OLED éclatant : pourquoi l'OmniBook Ultra 14 séduit tant",
+            "lien": "https://www.zdnet.fr/guide-achat/autonomie-record-ecran-oled-eclatant-pourquoi-lomnibook-ultra-14-seduit-tant-503259.htm#xtor=RSS-1",
+            "date": "12/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/hp-omnibook-ultra-14_une.jpg"
+        },
+        {
+            "titre": "Analyse Apple iPhone Duo : ses qualités photo ne peuvent pas rivaliser avec les modèles Pro de la marque",
+            "lien": "https://www.zdnet.fr/smartphone/analyse-apple-iphone-duo-ses-qualites-photo-ne-peuvent-pas-rivaliser-avec-les-modeles-pro-de-la-marque-503314.htm#xtor=RSS-1",
+            "date": "12/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/apple-iphone-duo-qualite-photo-analyse.jpeg"
+        },
+        {
             "titre": "Simplicité avant tout : notre verdict sur le Synology BeeStation Plus 8 To",
             "lien": "https://www.zdnet.fr/guide-achat/simplicite-avant-tout-notre-verdict-sur-le-synology-beestation-plus-8-to-503247.htm#xtor=RSS-1",
             "date": "12/09/2026",
@@ -295,18 +307,6 @@
             "lien": "https://www.zdnet.fr/guide-achat/nom-de-domaine-comment-bien-le-choisir-et-ou-lenregistrer-en-2026-503234.htm#xtor=RSS-1",
             "date": "11/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/nom-de-domaine-1.png"
-        },
-        {
-            "titre": "J'ai utilisé un outil d'IA gratuit et open source pour créer une application fonctionnelle – en deux jours",
-            "lien": "https://www.zdnet.fr/guide-achat/jai-utilise-un-outil-dia-gratuit-et-open-source-pour-creer-une-application-fonctionnelle-en-deux-jours-503355.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/dyadhero.webp"
-        },
-        {
-            "titre": "DMA : Google revoit ses résultats de recherche en Europe, et assure que cela pénalise les entreprises européennes",
-            "lien": "https://www.zdnet.fr/actualites/dma-google-revoit-ses-resultats-de-recherche-en-europe-et-assure-que-cela-penalise-les-entreprises-europeennes-503353.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2025/10/google-recherche.jpg"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,6 +373,18 @@
     ],
     "CVE Feed": [
         {
+            "titre": "CVE-2026-90553 - vLLM before 0.28.0 Remote Code Execution via LlavaOnevision2 processor",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90553",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-90537 - WWBN AVideo Scheduler sendEmail Missing Authorization via Token",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90537",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
             "titre": "CVE-2026-78175 - Tutor LMS <= 4.0.7 - Authenticated (Subscriber+) PHP Object Injection to Remote Code Execution",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78175",
             "date": "12/09/2026",
@@ -419,21 +431,15 @@
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90451",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90444 - Product Name OS Command Injection via Filename Validation Bypass",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90444",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-44715 - OpenMRS has Broken Access Control in HL7 Configuration",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-44715",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
     ],
     "Bleeping": [
+        {
+            "titre": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+            "lien": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+            "date": "12/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
         {
             "titre": "Hackers abused Claude to extract secrets from 1.8M Android apps",
             "lien": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
@@ -486,12 +492,6 @@
             "titre": "Conti ransomware gang member sentenced to 4 years in prison",
             "lien": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
             "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "New Android malware encrypts files, steals data, and harasses victims",
-            "lien": "https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/",
-            "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
         }
     ],
@@ -683,6 +683,12 @@
     ],
     "next.ink": [
         {
+            "titre": "Flock : Inarrêtables",
+            "lien": "https://next.ink/256142/flock-inarretables/",
+            "date": "12/09/2026",
+            "image": "https://next.ink/wp-content/uploads/2026/09/Inarretables-title.webp"
+        },
+        {
             "titre": "☕️ Le CEO d’Automattic de retour aux commandes de WordPress.com et Tumblr",
             "lien": "https://next.ink/brief-article/le-ceo-dautomattic-evince-par-le-ca-du-proprietaire-de-wordpress-com-et-tumblr/",
             "date": "11/09/2026",
@@ -735,12 +741,6 @@
             "lien": "https://next.ink/255920/plusieurs-associations-appellent-la-commission-europeenne-a-tuer-les-bannieres-de-cookies/",
             "date": "11/09/2026",
             "image": "https://next.ink/wp-content/uploads/2024/01/Cookiescnil.webp"
-        },
-        {
-            "titre": "Apple s’attaque aux images truquées avec Reference Image et SynthID",
-            "lien": "https://next.ink/255892/apple-sattaque-aux-images-truquees-avec-reference-image-et-synthid/",
-            "date": "11/09/2026",
-            "image": "https://next.ink/wp-content/uploads/2026/09/apple-reference-image.jpg"
         }
     ]
 }
