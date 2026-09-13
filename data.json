@@ -249,6 +249,18 @@
     ],
     "ZDNET": [
         {
+            "titre": "Garmin Forerunner 170 vs Coros Pace 4 : ultralégères et excellentes, l’une d’elles surpasse l’autre sur un point",
+            "lien": "https://www.zdnet.fr/guide-achat/garmin-forerunner-170-vs-coros-pace-4-ultralegeres-et-excellentes-lune-delles-surpasse-lautre-sur-un-point-503190.htm#xtor=RSS-1",
+            "date": "13/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/garmin-forerunner-170-vs-coros-pace-4-compar-test.jpg"
+        },
+        {
+            "titre": "Rision Magic : la caméra thermique de poche qui transforme votre smartphone en outil de diagnostic",
+            "lien": "https://www.zdnet.fr/guide-achat/rision-magic-la-camera-thermique-de-poche-qui-transforme-votre-smartphone-en-outil-de-diagnostic-503286.htm#xtor=RSS-1",
+            "date": "13/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/rision-magic_une.jpg"
+        },
+        {
             "titre": "Autonomie record, écran OLED éclatant : pourquoi l'OmniBook Ultra 14 séduit tant",
             "lien": "https://www.zdnet.fr/guide-achat/autonomie-record-ecran-oled-eclatant-pourquoi-lomnibook-ultra-14-seduit-tant-503259.htm#xtor=RSS-1",
             "date": "12/09/2026",
@@ -295,18 +307,6 @@
             "lien": "https://www.zdnet.fr/actualites/voici-la-qualite-principale-que-ce-directeur-technique-recherche-avant-tout-chez-ses-collaborateurs-bien-au-dela-des-competences-en-ia-503370.htm#xtor=RSS-1",
             "date": "11/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/gettyimages-2291156977.webp"
-        },
-        {
-            "titre": "L'iPhone Duo est une nouvelle preuve que les idées brillantes de Microsoft donnent naissance à d'excellents produits Apple",
-            "lien": "https://www.zdnet.fr/actualites/liphone-duo-est-une-nouvelle-preuve-que-les-idees-brillantes-de-microsoft-donnent-naissance-a-dexcellents-produits-apple-503366.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/green-line-duos.webp"
-        },
-        {
-            "titre": "Nom de domaine : comment bien le choisir et où l’enregistrer en 2026",
-            "lien": "https://www.zdnet.fr/guide-achat/nom-de-domaine-comment-bien-le-choisir-et-ou-lenregistrer-en-2026-503234.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/nom-de-domaine-1.png"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,9 +373,21 @@
     ],
     "CVE Feed": [
         {
+            "titre": "CVE-2026-90493 - Tonec Internet Download Manager Kernel Driver idmwfp.sys access control",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90493",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-90668 - UnrealIRCd HTTP Header Denial of Service",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90668",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
             "titre": "CVE-2026-90651 - Socket Firewall TLS Certificate Verification Bypass",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90651",
-            "date": "12/09/2026",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
@@ -417,18 +429,6 @@
         {
             "titre": "CVE-2026-90537 - WWBN AVideo Scheduler sendEmail Missing Authorization via Token",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90537",
-            "date": "12/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-15451 - MemberPress Corporate Accounts <= 1.5.39 - Authenticated (Subscriber+) Privilege Escalation via Mass Assignment in Sub-Account Creation",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-15451",
-            "date": "12/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-78175 - Tutor LMS <= 4.0.7 - Authenticated (Subscriber+) PHP Object Injection to Remote Code Execution",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-78175",
             "date": "12/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
