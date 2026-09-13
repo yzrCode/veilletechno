@@ -249,6 +249,12 @@
     ],
     "ZDNET": [
         {
+            "titre": "La règle 3-2-1 : la stratégie de sauvegarde simple qui pourrait vous sauver la mise",
+            "lien": "https://www.zdnet.fr/pratique/la-regle-3-2-1-la-strategie-de-sauvegarde-simple-qui-pourrait-vous-sauver-la-mise-503334.htm#xtor=RSS-1",
+            "date": "13/09/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/sauvegarde.jpg"
+        },
+        {
             "titre": "Garmin Forerunner 170 vs Coros Pace 4 : ultralégères et excellentes, l’une d’elles surpasse l’autre sur un point",
             "lien": "https://www.zdnet.fr/guide-achat/garmin-forerunner-170-vs-coros-pace-4-ultralegeres-et-excellentes-lune-delles-surpasse-lautre-sur-un-point-503190.htm#xtor=RSS-1",
             "date": "13/09/2026",
@@ -301,12 +307,6 @@
             "lien": "https://www.zdnet.fr/publicite/norton-360-deluxe-vs-standard-pourquoi-loffre-deluxe-est-plus-interessante-503093.htm#xtor=RSS-1",
             "date": "11/09/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/4670.png"
-        },
-        {
-            "titre": "Voici la qualité principale que ce Directeur Technique recherche avant tout chez ses collaborateurs, bien au delà des compétences en IA",
-            "lien": "https://www.zdnet.fr/actualites/voici-la-qualite-principale-que-ce-directeur-technique-recherche-avant-tout-chez-ses-collaborateurs-bien-au-dela-des-competences-en-ia-503370.htm#xtor=RSS-1",
-            "date": "11/09/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/09/gettyimages-2291156977.webp"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,67 +373,73 @@
     ],
     "CVE Feed": [
         {
-            "titre": "CVE-2026-90493 - Tonec Internet Download Manager Kernel Driver idmwfp.sys access control",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90493",
+            "titre": "CVE-2026-90783 - MKVToolNix through 101.0 Heap Buffer Overflow via avilib ODML Superindex Integer Wraparound",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90783",
             "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90668 - UnrealIRCd HTTP Header Denial of Service",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90668",
+            "titre": "CVE-2026-90780 - SIPp through 3.7.7 Buffer Overflow via Oversized SIP Header Content",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90780",
             "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90651 - Socket Firewall TLS Certificate Verification Bypass",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90651",
+            "titre": "CVE-2026-90779 - SIPp through 3.7.7 Stack Buffer Overflow via createAuthHeader Algorithm Parameter",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90779",
             "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90647 - Kalkitech ASE2000 Improper Certificate Validation Vulnerability",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90647",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90778 - SIPp through 3.7.7 Buffer Overflow via SIP To Header Tag",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90778",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90560 - zstd-jni 1.2.0 through 1.5.7-13 Out-of-Bounds Read via ZstdDictDecompress",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90560",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90777 - ESPnet before 202609 Remote Code Execution via Unsafe Deserialization",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90777",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90559 - snappy-java through 1.1.10.8 Out-of-Bounds Write via uncompress",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90559",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90776 - Nodemailer 9.1.0 through 10.0.4 Denial of Service via Quadratic Address Parsing",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90776",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90558 - sngrep through 1.8.4 Stack Buffer Overflow via SIP Headers",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90558",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90774 - rustypaste before 0.18.1 Path Traversal via filename header",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90774",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90556 - Freeciv before 3.2.6 Heap Buffer Overflow via worklist_load",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90556",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90772 - Amundsen Frontend through 4.3.0 Stored XSS via Description",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90772",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90553 - vLLM before 0.28.0 Remote Code Execution via LlavaOnevision2 processor",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90553",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90770 - Spug through 3.4.0 Remote Code Execution via ping_check",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90770",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-90537 - WWBN AVideo Scheduler sendEmail Missing Authorization via Token",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90537",
-            "date": "12/09/2026",
+            "titre": "CVE-2026-90769 - Open Notebook before 1.11.0 Server-Side Request Forgery via link-source",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90769",
+            "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
     ],
     "Bleeping": [
+        {
+            "titre": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+            "lien": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
         {
             "titre": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
             "lien": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
@@ -487,15 +493,15 @@
             "lien": "https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/",
             "date": "11/09/2026",
             "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Conti ransomware gang member sentenced to 4 years in prison",
-            "lien": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
-            "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
         }
     ],
     "LeMagIT": [
+        {
+            "titre": "Vulnérabilités : l’écosystème open source face aux dilemmes du tout IA",
+            "lien": "https://www.lemagit.fr/dessin/Vulnerabilites-lecosysteme-open-source-face-aux-dilemmes-du-tout-IA",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
         {
             "titre": "Mistral AI et Cloudera s’allient autour de l’IA privée",
             "lien": "https://www.lemagit.fr/actualites/366649604/Mistral-AI-et-Cloudera-sallient-autour-de-lIA-privee",
@@ -547,12 +553,6 @@
         {
             "titre": "Comment les agents d’OpenAI ont détourné un wiki",
             "lien": "https://www.lemagit.fr/dessin/Comment-les-agents-dOpenAI-ont-detourne-un-wiki",
-            "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Le tiercé létal de l’IA agentique : ce que les RSSI doivent savoir",
-            "lien": "https://www.lemagit.fr/conseil/Le-tierce-letal-de-lIA-agentique-ce-que-les-RSSI-doivent-savoir",
             "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
         }
