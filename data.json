@@ -621,6 +621,12 @@
     ],
     "ChannelNews": [
         {
+            "titre": "Trois géants de l’IA appellent quasi simultanément à freiner le développement de l’IA",
+            "lien": "https://www.channelnews.fr/trois-geants-de-lia-appellent-quasi-simultanement-a-freiner-le-developpement-de-lia-158838",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
+        },
+        {
             "titre": "Oracle : croissance de 30% au premier trimestre, grâce à l’envolée des infrastructures cloud",
             "lien": "https://www.channelnews.fr/oracle-croissance-de-30-au-premier-trimestre-grace-a-lenvolee-des-infrastructures-cloud-158827",
             "date": "11/09/2026",
@@ -671,12 +677,6 @@
         {
             "titre": "Le gouvernement confie à l’Anssi la mise en place d’une « unité de première intervention » au secours des ministères",
             "lien": "https://www.channelnews.fr/le-gouvernement-confie-a-lanssi-la-mise-en-place-dune-unite-de-premiere-intervention-au-secours-des-ministeres-158789",
-            "date": "09/09/2026",
-            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
-        },
-        {
-            "titre": "Cegid et Silae s’apprêtent à fusionner pour bâtir un géant du logiciel de gestion",
-            "lien": "https://www.channelnews.fr/cegid-et-silae-sappretent-a-fusionner-pour-batir-un-geant-du-logiciel-de-gestion-158787",
             "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
         }
