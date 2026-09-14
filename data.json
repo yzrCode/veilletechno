@@ -373,6 +373,48 @@
     ],
     "CVE Feed": [
         {
+            "titre": "CVE-2026-90606 - Totolink A3002MU boa formIpv6Setup buffer overflow",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90606",
+            "date": "14/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-90605 - Totolink A3002MU boa formFilter buffer overflow",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90605",
+            "date": "14/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-88793 - YouTube Embed 10.0 - 10.3 - Unauthenticated Stored XSS via youram_server",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88793",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-85129 - Hoo Companion 1.0.2 - Unauthenticated Stored XSS via Theme Settings Import",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-85129",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-81648 - CryptoPayment Gateway 1.2.1 - 1.2.2 - Unauthenticated Arbitrary File Deletion and Settings Update via Unguarded AJAX Router",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-81648",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-74933 - GenieWords 1.5.27 - 1.5.34 - Unauthenticated Stored XSS and Configuration Overwrite",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-74933",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-37008 - CrewAI Sandbox Bypass via Python Runtime Manipulation",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-37008",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
             "titre": "CVE-2026-90783 - MKVToolNix through 101.0 Heap Buffer Overflow via avilib ODML Superindex Integer Wraparound",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90783",
             "date": "13/09/2026",
@@ -387,48 +429,6 @@
         {
             "titre": "CVE-2026-90779 - SIPp through 3.7.7 Stack Buffer Overflow via createAuthHeader Algorithm Parameter",
             "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90779",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90778 - SIPp through 3.7.7 Buffer Overflow via SIP To Header Tag",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90778",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90777 - ESPnet before 202609 Remote Code Execution via Unsafe Deserialization",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90777",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90776 - Nodemailer 9.1.0 through 10.0.4 Denial of Service via Quadratic Address Parsing",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90776",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90774 - rustypaste before 0.18.1 Path Traversal via filename header",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90774",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90772 - Amundsen Frontend through 4.3.0 Stored XSS via Description",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90772",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90770 - Spug through 3.4.0 Remote Code Execution via ping_check",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90770",
-            "date": "13/09/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-90769 - Open Notebook before 1.11.0 Server-Side Request Forgery via link-source",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-90769",
             "date": "13/09/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
@@ -497,6 +497,12 @@
     ],
     "LeMagIT": [
         {
+            "titre": "Puces IA : contre toute attente, AWS se fournira chez Qualcomm",
+            "lien": "https://www.lemagit.fr/actualites/366648770/Puces-IA-contre-toute-attente-AWS-se-fournira-chez-Qualcomm",
+            "date": "13/09/2026",
+            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
+        },
+        {
             "titre": "Vulnérabilités : l’écosystème open source face aux dilemmes du tout IA",
             "lien": "https://www.lemagit.fr/dessin/Vulnerabilites-lecosysteme-open-source-face-aux-dilemmes-du-tout-IA",
             "date": "13/09/2026",
@@ -548,12 +554,6 @@
             "titre": "IA : c’est la stratégie qui crée de la valeur, pas les outils",
             "lien": "https://www.lemagit.fr/conseil/IA-cest-la-strategie-qui-cree-de-la-valeur-pas-les-outils",
             "date": "11/09/2026",
-            "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
-        },
-        {
-            "titre": "Comment les agents d’OpenAI ont détourné un wiki",
-            "lien": "https://www.lemagit.fr/dessin/Comment-les-agents-dOpenAI-ont-detourne-un-wiki",
-            "date": "10/09/2026",
             "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500"
         }
     ],
@@ -639,6 +639,12 @@
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
         },
         {
+            "titre": "Manaps améliore sa rentabilité grâce à l’automatisation et vise un doublement de son CA à cinq ans",
+            "lien": "https://www.channelnews.fr/manaps-ameliore-sa-rentabilite-grace-a-lautomatisation-et-vise-un-doublement-de-son-ca-a-cinq-ans-158840",
+            "date": "11/09/2026",
+            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
+        },
+        {
             "titre": "Le prix de la mémoire vive amplifié par des bots",
             "lien": "https://www.channelnews.fr/le-prix-de-la-memoire-vive-amplifie-par-des-bots-158813",
             "date": "11/09/2026",
@@ -672,12 +678,6 @@
             "titre": "BlueSecure lève 1 million d’euros pour sensibiliser au risque cyber par le jeu",
             "lien": "https://www.channelnews.fr/bluesecure-leve-1-million-deuros-pour-sensibiliser-au-risque-cyber-par-le-jeu-158798",
             "date": "10/09/2026",
-            "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
-        },
-        {
-            "titre": "Le gouvernement confie à l’Anssi la mise en place d’une « unité de première intervention » au secours des ministères",
-            "lien": "https://www.channelnews.fr/le-gouvernement-confie-a-lanssi-la-mise-en-place-dune-unite-de-premiere-intervention-au-secours-des-ministeres-158789",
-            "date": "09/09/2026",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500"
         }
     ],
