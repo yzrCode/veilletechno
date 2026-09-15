@@ -2,8 +2,13 @@ name: Mise a jour automatique de data.json
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    # 5h12 UTC = 7h12 heure française (en heure d'été)
+    - cron: '12 5 * * *'
   workflow_dispatch:
+
+# OBLIGATOIRE : Donne le droit au bot de faire "git push"
+permissions:
+  contents: write
 
 jobs:
   run-python:
