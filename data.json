@@ -1,67 +1,11 @@
 {
-    "IT-Connect": [
-        {
-            "titre": "Je suis passé de Windows à macOS depuis 6 mois : voici mon retour d’expérience",
-            "lien": "https://www.it-connect.fr/windows-vers-mac-bilan-mon-experience/",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "Installation et utilisation de Claude Code : premiers pas",
-            "lien": "https://www.it-connect.fr/tuto-installation-et-utilisation-de-claude-code/",
-            "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "GLPI 11.0.11 et GLPI 10.0.28 : 8 failles patchées et la fin annoncée de GLPI 10",
-            "lien": "https://www.it-connect.fr/glpi-11-0-10-10-0-28-failles-fin-glpi-10/",
-            "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "TeamViewer a corrigé 5 failles de sécurité, dont une exploitable à distance",
-            "lien": "https://www.it-connect.fr/teamviewer-5-failles-securite-version-15-82/",
-            "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "Stockage S3 souverain en France : comment créer des sauvegardes Veeam immuables avec Leviia Storag3",
-            "lien": "https://www.it-connect.fr/leviia-storag3-sauvegardes-immuables-s3/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "DAWO : les Pays-Bas misent sur NixOS pour remplacer Windows 11 et Microsoft",
-            "lien": "https://www.it-connect.fr/dawo-pays-bas-poste-travail-souverain-nixos/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "Faille Metabase : l’ANSSI et la DINUM victimes d’une fuite de données",
-            "lien": "https://www.it-connect.fr/anssi-dinum-fuite-donnees-metabase/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "Windows 11 26H2 à peine sorti, Microsoft liste déjà 3 bugs, et chez vous ?",
-            "lien": "https://www.it-connect.fr/windows-11-26h2-problemes-connus/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "Thunderbird 157 corrige le bug du CPU à 100 % et 76 failles de sécurité",
-            "lien": "https://www.it-connect.fr/thunderbird-157-correctifs-cpu-openpgp-imap/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        },
-        {
-            "titre": "OpenAI lance dots, l’agent IA qui travaille même quand vous dormez",
-            "lien": "https://www.it-connect.fr/openai-dots-agents-ia-toujours-actifs/",
-            "date": "30/09/2026",
-            "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500"
-        }
-    ],
     "Journal du Hacker": [
+        {
+            "titre": "Rails est-il vraiment fini ?",
+            "lien": "https://michaelbensoussan.com/posts/rails-est-il-fini/",
+            "date": "03/10/2026",
+            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
+        },
         {
             "titre": "Du RAID 1 à ZFS – Retour d’expérience d’une migration de 20 heures",
             "lien": "https://spirio.fr/2026/10/02/du-raid-1-a-zfs-retour-dexperience-dune-migration-de-20-heures/",
@@ -115,15 +59,27 @@
             "lien": "https://blog.flozz.fr/2026/09/28/premieres-impressions-sur-la-mini-liseuse-xteink-x4-classic/",
             "date": "28/09/2026",
             "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
-        },
-        {
-            "titre": "Liens intéressants Journal du hacker semaine #39",
-            "lien": "https://blog.journalduhacker.net/index.php?article606/liens-interessants-journal-du-hacker-semaine-39-2026",
-            "date": "28/09/2026",
-            "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500"
         }
     ],
     "Korben": [
+        {
+            "titre": "Aller en manif avec son téléphone - Les bons réflexes",
+            "lien": "https://korben.info/applications-aller-en-manif.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
+            "date": "03/10/2026",
+            "image": "https://korben.info/applications-aller-en-manif/applications-aller-en-manif-1.png"
+        },
+        {
+            "titre": "56k.rip - Expérimentez le web comme en 1996",
+            "lien": "https://korben.info/56k-rip-simulateur-modem-rtc.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
+            "date": "03/10/2026",
+            "image": "https://korben.info/56k-rip-simulateur-modem-rtc/56k-rip-simulateur-modem-rtc-1.png"
+        },
+        {
+            "titre": "Virtual Mac - Faites tourner macOS sur un iPad (jailbreaké)",
+            "lien": "https://korben.info/virtualmac-ipad-macos-virtualise.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
+            "date": "03/10/2026",
+            "image": "https://korben.info/virtualmac-ipad-macos-virtualise/virtualmac-ipad-macos-virtualise-1.png"
+        },
         {
             "titre": "Tuta contourne l'IMAP pour entrer dans Nextcloud",
             "lien": "https://korben.info/tuta-mail-nextcloud.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
@@ -165,24 +121,6 @@
             "lien": "https://korben.info/test-de-la-batterie-externe-ugreen-magflow-pro-avec-son-refroidissement-liquide-visible.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
             "date": "30/09/2026",
             "image": "https://korben.info/test-de-la-batterie-externe-ugreen-magflow-pro-avec-son-refroidissement-liquide-visible/test-de-la-batterie-externe-ugreen-magflow-pro-avec-son-refroidissement-liquide-visible-1.jpg"
-        },
-        {
-            "titre": "Relapse - Le jailbreak qui libère presque toutes les PS5",
-            "lien": "https://korben.info/ps5-jailbreak-relapse.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
-            "date": "30/09/2026",
-            "image": "https://korben.info/ps5-jailbreak-relapse/ps5-jailbreak-relapse-1.png"
-        },
-        {
-            "titre": "HaloBattery - Suivez le niveau de batterie de tous vos périphériques",
-            "lien": "https://korben.info/halobattery-batterie-peripheriques-windows.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
-            "date": "30/09/2026",
-            "image": "https://korben.info/halobattery-batterie-peripheriques-windows/halobattery-batterie-peripheriques-windows-1.png"
-        },
-        {
-            "titre": "Comment la douane allemande arrive à lire les messages Signal, Whatsapp et Telegram",
-            "lien": "https://korben.info/police-allemande-appareil-lie-whatsapp-signal.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-principal",
-            "date": "30/09/2026",
-            "image": "https://korben.info/police-allemande-appareil-lie-whatsapp-signal/police-allemande-appareil-lie-whatsapp-signal-1.png"
         }
     ],
     "CERT-FR": [
@@ -249,6 +187,18 @@
     ],
     "ZDNET": [
         {
+            "titre": "Vos applications espionnent-elles votre PC ? Voici comment le vérifier gratuitement",
+            "lien": "https://www.zdnet.fr/pratique/vos-applications-espionnent-elles-votre-pc-voici-comment-le-verifier-gratuitement-504922.htm#xtor=RSS-1",
+            "date": "04/10/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/10/pc-portable-1.jpg"
+        },
+        {
+            "titre": "Choisir un PC portable pour sa petite entreprise : le guide complet d'un testeur professionnel",
+            "lien": "https://www.zdnet.fr/pratique/choisir-un-pc-portable-pour-sa-petite-entreprise-le-guide-complet-dun-testeur-professionnel-504895.htm#xtor=RSS-1",
+            "date": "03/10/2026",
+            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/10/pc-portable.jpg"
+        },
+        {
             "titre": "J'ai testé Apple CarPlay pendant un mois, et voici ce qu'Android Auto devrait vraiment lui emprunter",
             "lien": "https://www.zdnet.fr/pratique/jai-teste-apple-carplay-pendant-un-mois-et-voici-ce-quandroid-auto-devrait-vraiment-lui-emprunter-504876.htm#xtor=RSS-1",
             "date": "03/10/2026",
@@ -295,18 +245,6 @@
             "lien": "https://www.zdnet.fr/actualites/cloudflare-lance-lia-clef-et-k2-pour-automatiser-vos-decisions-505034.htm#xtor=RSS-1",
             "date": "02/10/2026",
             "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/10/cloudflare_cle.jpg"
-        },
-        {
-            "titre": "OpenAI lance une alerte : plus de 100 entreprises touchées par ses agents autonomes",
-            "lien": "https://www.zdnet.fr/actualites/openai-lance-une-alerte-plus-de-100-entreprises-touchees-par-ses-agents-autonomes-505028.htm#xtor=RSS-1",
-            "date": "02/10/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2026/02/chatbots-et-pubs.jpg"
-        },
-        {
-            "titre": "ZD Tech : Puces IA, voici pourquoi l'accord secret entre SK Hynix et Intel change tout",
-            "lien": "https://www.zdnet.fr/actualites/zd-tech-puces-ia-voici-pourquoi-laccord-secret-entre-sk-hynix-et-intel-change-tout-504831.htm#xtor=RSS-1",
-            "date": "02/10/2026",
-            "image": "https://www.zdnet.fr/wp-content/uploads/zdnet/2024/09/zdnet-podcast-bo.jpg"
         }
     ],
     "Blog Officiel Zabbix": [
@@ -373,67 +311,91 @@
     ],
     "CVE Feed": [
         {
-            "titre": "CVE-2026-85515 - OpenPGP message truncation not reported, bypassing the SEIPDv1 integrity check",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-85515",
+            "titre": "CVE-2026-103355 - WordPress Unlimited Elements For Elementor (Free Widgets, Addons, Templates) plugin <= 2.0.20 - SQL Injection vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-103355",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-105135 - InternLM MindSearch Planner Agent graph.py ExecutionAction.run code injection",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105135",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-105134 - Ahsay AhsayCBS Replication Receiver UpdateReceivers.do os command injection",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105134",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-88779 - Memory overflow vulnerability  leading to Denial of Service",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-88779",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-105126 - LaraDashboard before 1.4.8 Privilege Escalation via Superadmin Role Tampering",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105126",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-105123 - W (wcms) through 3.18.0 RCE and Arbitrary File Write via Media Upload API",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105123",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
+        },
+        {
+            "titre": "CVE-2026-96451 - WordPress Ultimate Member plugin <= 2.13.1 - Privilege Escalation vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-96451",
             "date": "03/10/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-71890 - MLS external commit can remove an arbitrary group member",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71890",
+            "titre": "CVE-2026-103065 - WordPress Kirki plugin <= 6.3.1 - Arbitrary Code Execution vulnerability",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-103065",
             "date": "03/10/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-71889 - PKIXCertPathReviewer does not apply X.509 name constraints to the target certificate",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71889",
+            "titre": "CVE-2026-105115 - OpenAM before 16.1.3 Unauthenticated Arbitrary Class Instantiation via JAX-RPC Interface",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105115",
             "date": "03/10/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         },
         {
-            "titre": "CVE-2026-71888 - CMS AuthenticatedData exposes attacker-inserted authAttrs when digestAlgorithm is absent",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71888",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-71887 - OpenPGP data signature accepted from a signing subkey without cross-certification",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71887",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-71886 - OpenPGP certification accepted from a subkey without certification authority",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71886",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-71885 - MLS X.509 credential not bound to the LeafNode signature key",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71885",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-71883 - Native AES packet cipher returns the raw AES key on an alias",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-71883",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-92084 - Beaver Builder Page Builder <= 2.11.0.5 - Unauthenticated Arbitrary Shortcode Execution via Sidebar Module Widget Output",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-92084",
-            "date": "03/10/2026",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
-        },
-        {
-            "titre": "CVE-2026-94505 - Nelio Content <= 4.5.0 - Missing Authorization to Authenticated (Contributor+) Arbitrary Reusable Message Deletion via 'id' Parameter",
-            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-94505",
+            "titre": "CVE-2026-105105 - Unauthenticated ZeroMQ command/telemetry bus in AIT-Core allows remote spacecraft command injection and telemetry exfiltration",
+            "lien": "https://cvefeed.io/vuln/detail/CVE-2026-105105",
             "date": "03/10/2026",
             "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500"
         }
     ],
     "Bleeping": [
+        {
+            "titre": "Anthropic asks Claude users to share voice data for AI model training",
+            "lien": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+            "date": "04/10/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "Google Gemini could soon get full access to your Mac’s files, apps and the web",
+            "lien": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+            "date": "03/10/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
+            "lien": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+            "date": "03/10/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
+        {
+            "titre": "Danish university DTU breach exposes data of up to 200,000 people",
+            "lien": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200-000-people/",
+            "date": "03/10/2026",
+            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
+        },
         {
             "titre": "Frontline Education breach exposes school district employee data",
             "lien": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
@@ -468,30 +430,6 @@
             "titre": "Dell asks admins to patch max severity CSM flaws as soon as possible",
             "lien": "https://www.bleepingcomputer.com/news/security/new-max-severity-dell-csm-flaws-give-hackers-admin-privileges/",
             "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
-            "lien": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
-            "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Fortinet warns of critical FortiMail flaw exploited in zero-day attacks",
-            "lien": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Autonomous AI agents tried to hack US, Canadian government websites",
-            "lien": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-            "date": "01/10/2026",
-            "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
-        },
-        {
-            "titre": "Microsoft says threat actors are ahead in the early AI race",
-            "lien": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-            "date": "01/10/2026",
             "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500"
         }
     ],
@@ -683,6 +621,12 @@
     ],
     "next.ink": [
         {
+            "titre": "Flock : prose à hic",
+            "lien": "https://next.ink/259731/flock-prose-a-hic/",
+            "date": "03/10/2026",
+            "image": "https://next.ink/wp-content/uploads/2026/10/Prose-a-hic-titre.webp"
+        },
+        {
             "titre": "Datacenters : Google affirme prélever 72 % de son eau en zone peu stressée… vraiment ?",
             "lien": "https://next.ink/259609/datacenters-google-affirme-prelever-72-de-son-eau-en-zone-peu-stressee-vraiment/",
             "date": "02/10/2026",
@@ -735,12 +679,6 @@
             "lien": "https://next.ink/259143/clement-le-ludec-ne-pas-voir-le-travail-de-donnees-necessaire-a-lia-nous-arrange/",
             "date": "02/10/2026",
             "image": "https://next.ink/wp-content/uploads/2026/09/portrait_le-ludec.webp"
-        },
-        {
-            "titre": "☕️ Hausse de prix pour les Raspberry Pi 4 et 5 de 2 Go, qui passent à 66 et 76 euros",
-            "lien": "https://next.ink/brief-article/hausse-de-prix-pour-les-raspberry-pi-4-et-5-de-2-go-qui-passent-a-66-et-76-euros/",
-            "date": "02/10/2026",
-            "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500"
         }
     ]
 }
